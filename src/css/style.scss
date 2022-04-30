@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container{
+    width: 100%;
+    max-width: 1264px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body{
+    background: #1E252B;
+}
+.map__circle{
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    &__title{
+        font-family: 'Poppins',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+}
+
+.btn{
+    background: transparent;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 12px 28px;
+    color: rgba(255, 255, 255, 0.78);
+    border-radius: 8px;
+    &:hover{  background: #FF6E30;
+        color:  #FDF5FF;
+    }
+}
+
+.home{
+    padding: 104px 0 168px;
+    position: relative;
+    &::before{
+        content: url("../images/homebg.png");
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__list{
+        display: flex;
+        column-gap: 8px;
+        &__item{
+            padding: 12px;
+        }
+    }
+}
+
+.title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.9);
+    &_left{
+        margin-bottom: 30px;
+    }
+    &_center{
+        text-align: center;
+    }
+
+}
+
+.subtitle{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    &_left{
+        margin-bottom: 60px;
+    }
+    &_center{
+        margin: 25px 0 110px;
+        text-align: center;
+    }
+}
+
+.form{
+   width: 100%;
+    max-width: 497px;
+    position: relative;
+    margin-bottom: 127px;
+    &__field{
+        width: 100%;
+        height: 64px;
+        border: none;
+        padding-left: 55px;
+        appearance: none;
+        background: #283036;
+        border-radius: 15px;
+    }
+    &__search{
+        position: absolute;
+        left: 18px;
+        top: 20px;
+        color: red;
+    }
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #FF6E30;
+    border-radius: 8px;
+
+    &_form {
+        padding: 12px 36px;
+        position: absolute;
+        top: 8px;
+        right: 11px;
+    }
+
+    &_popup {
+        font-family: 'SF Pro Text', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        width: 100%;
+        padding: 13px 0;
+        margin: 29px 0 25px;
+    }
+}
+
+.overlay{
+    background: rgba(25, 25, 25, 0.4);
+    backdrop-filter: blur(32px);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &_active{
+        display: flex;
+    }
+
+
+}
+
+@import "./header";
+@import "./popup";
+@import "./tools";
+@import "./brands";
+@import "./newcomer";
+@import "./review";
+@import "./swiper";
+@import "./become";
+@import "footer";
+
+

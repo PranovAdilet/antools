@@ -1,0 +1,58 @@
+.become{
+  &__content{
+    margin-bottom: 240px;
+    text-align: center;
+    &-title{
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 130%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    &-subtitle{
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.55);
+    }
+    &-form{
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+      max-width: 549px;
+      height: 64px;
+    }
+    &-input{
+      height: 100%;
+      width: 100%;
+      padding-left: 24px;
+      border: none;
+      outline: none;
+      background: #283036;
+      border-radius: 15px;
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: rgba(255, 255, 255, 0.38);
+    }
+    &-button{
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      padding: 12px 43px;
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}

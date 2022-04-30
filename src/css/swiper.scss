@@ -1,0 +1,34 @@
+$orange:#FF6E30;
+.swiper-button-next{
+  color: $orange;
+
+}
+.swiper-button-prev{
+  color: $orange;
+}
+.swiper-pagination{
+  bottom: 0;
+}
+.swiper-pagination-bullet{
+  background: white;
+  border-radius: 4px;
+  width: 44px;
+  height: 6px;
+  &-active{
+    background: $orange;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 107px!important;
+  &-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-slide img {
+    display: block;
+    width: 50%;
+  }
+}

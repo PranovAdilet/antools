@@ -1,0 +1,119 @@
+.tools{
+  padding: 200px 0;
+  &__btn{
+    text-align: center;
+  }
+  &__more{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF6E30;
+    padding: 17px 38px;
+    background: #1E252B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 117px;
+    cursor: pointer;
+
+  }
+
+  &__row{
+    display: flex;flex-wrap: wrap;
+    gap: 25px;
+  }
+  &__card{
+    width: calc(33.33333% - 16.66666px);
+    padding: 33px;
+    position: relative;
+    overflow: hidden;
+    &_hide{
+      display: none;
+      &.active{
+        width: calc(33.33333% - 16.66666px);
+        padding: 33px;
+        display: block;
+      }
+
+    }
+    &:before{
+      content: "";
+      width: 65px;
+      height: 65px;
+      filter: blur(50px);
+      background: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: .3s;
+    }
+    &:hover{
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(50px);
+      border-radius: 15px;
+      transform: translateY(-15px);
+      transition: .3s;
+      &:before{
+        background: rgba(255, 110, 48, 0.6);
+        transition: .3s;
+      }
+      .tools__card_btn{
+        transition: .3s;
+        background: #FF6E30;
+        border-radius: 8px;
+      }
+    }
+    &-top{
+      display: flex;
+      align-items: center;
+      column-gap: 35px;
+    }
+    &-title{
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    &-price{
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(255, 165, 55, 0.55);
+      margin-top: 3px;
+    }
+    &-text{
+      margin: 30px 0;
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+    &-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-icons{
+      display: flex;
+      column-gap: 12px;
+    }
+    &_btn{
+      font-family: 'Poppins',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.55);
+
+    }
+  }
+
+}

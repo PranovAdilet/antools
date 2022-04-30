@@ -1,0 +1,44 @@
+.brands__row {
+  padding: 55px 0;
+}
+.brands__row:before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.brands__row:hover {
+  background: rgba(44, 53, 61, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 25px;
+}
+.brands__row:hover:before {
+  background: rgba(255, 110, 48, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.brands__row-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 55px;
+  text-align: center;
+}
+.brands__row-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}

@@ -1,0 +1,45 @@
+.brands{
+  &__row {
+    padding: 55px 0;
+    &:before{
+      content: "";
+      width: 65px;
+      height: 65px;
+      filter: blur(50px);
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .3s;
+
+    }
+    &:hover{
+      background: rgba(44, 53, 61, 0.2);
+      backdrop-filter: blur(50px);
+      border-radius: 25px;
+      overflow: hidden;
+      &:before{
+        background: rgba(255, 110, 48, 0.6);
+        transition: .3s;
+
+      }
+    }
+
+    &-title {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 55px;
+      text-align: center;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-around;
+
+    }
+  }
+}

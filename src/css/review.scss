@@ -1,0 +1,33 @@
+.review{
+  padding-bottom: 250px;
+  .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  &__slide{
+    display: flex;
+    justify-content: space-between;
+    max-width: 849px;
+    &-img{
+      width: 50%;
+    }
+    &-text{
+      width: 50%;
+      margin-top: 128px;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.015em;
+      color: rgba(255, 255, 255, 0.78);
+
+    }
+  }
+
+  &__content{
+
+  }
+
+
+}
